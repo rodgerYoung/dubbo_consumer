@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.example.demo.dubbo.service.ABCService;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class controller {
+public class TestController {
     @Reference
     TestService testService;
     @GetMapping("/test")
